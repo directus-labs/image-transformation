@@ -1,0 +1,48 @@
+{
+	"name": "directus-extension-image-transformation",
+	"version": "1.0.0",
+	"keywords": [
+		"directus",
+		"directus-extension",
+		"directus-custom-bundle"
+	],
+	"files": [
+		"dist"
+	],
+	"directus:extension": {
+		"type": "bundle",
+		"path": {
+			"app": "dist/app.js",
+			"api": "dist/api.js"
+		},
+		"entries": [
+			{
+				"type": "hook",
+				"name": "image-transformation-translations",
+				"source": "hooks/translations/index.ts"
+			},
+			{
+				"type": "interface",
+				"name": "image-transformation-interface",
+				"source": "interfaces/image-transformation/index.ts"
+			}
+		],
+		"host": "^9.21.0"
+	},
+	"scripts": {
+		"build": "directus-extension build",
+		"dev": "directus-extension build -w --no-minify"
+	},
+	"devDependencies": {
+		"@directus/extensions-sdk": "9.22.1",
+		"@directus/shared": "9.22.1",
+		"@types/lodash": "^4.14.191",
+		"@types/node": "^18.11.18",
+		"lodash": "4.17.21",
+		"rollup-plugin-inline-svg": "^3.0.3",
+		"sass": "^1.57.1",
+		"typescript": "4.9.4",
+		"vue": "3.2.45",
+		"vue-i18n": "9.2.2"
+	}
+}
