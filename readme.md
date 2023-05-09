@@ -1,0 +1,1 @@
+<img src=".github/community-maintained.svg" width="100%" alt="Community-maintained. This project is not maintained by the Directus Core Team, but by our wider community. Interested in taking it on? Get in touch!">
