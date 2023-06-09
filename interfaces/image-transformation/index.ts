@@ -9,23 +9,10 @@ export default defineInterface({
 	icon: "insert_photo",
 	component: InterfaceImageTransformation,
 	types: ["uuid"],
-	localTypes: ["file"],
+	localTypes: ["m2o"],
 	group: "relational",
 	relational: true,
 	options: [
-		{
-			field: "image_transformation_collection",
-			type: "string",
-			name: "$t:image_transformation_collection",
-			meta: {
-				interface: "system-collection",
-				options: {
-					includeSystem: false,
-					includeSingleton: false,
-				},
-				width: "full",
-			},
-		},
 		{
 			field: "folder",
 			name: "$t:interfaces.system-folder.folder",
